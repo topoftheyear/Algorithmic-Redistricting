@@ -2,7 +2,7 @@
   "name": "algred",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://{topoftheyear}.github.io/Algorithmic-Redistricting/",
+  "homepage": "https://topoftheyear.github.io/Algorithmic-Redistricting/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
