@@ -266,7 +266,7 @@ for state in delegates.keys():
     for ax in fig.get_axes():
         ax.set_aspect('equal')
     
-    plt.savefig(f'results/images/{state}_districts_{percentage_of_max}.png')
+    plt.savefig(f'src/results/images/{state}_districts_{percentage_of_max}.png')
     plt.close(fig)
 
     # Data saving for a file
@@ -303,5 +303,5 @@ for state in delegates.keys():
     }
 
     
-with open(f'results/results_{percentage_of_max}.json', 'w+') as f:
+with open(f'src/results/results_{percentage_of_max}.json', 'w+') as f:
     json.dump(big_data, f)
