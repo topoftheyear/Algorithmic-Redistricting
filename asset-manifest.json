@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Algorithmic-Redistricting/static/css/main.5ed3ca6a.chunk.css",
+    "main.js": "/Algorithmic-Redistricting/static/js/main.464963c5.chunk.js",
+    "main.js.map": "/Algorithmic-Redistricting/static/js/main.464963c5.chunk.js.map",
+    "runtime-main.js": "/Algorithmic-Redistricting/static/js/runtime-main.84e46c61.js",
+    "runtime-main.js.map": "/Algorithmic-Redistricting/static/js/runtime-main.84e46c61.js.map",
+    "static/js/2.376846fb.chunk.js": "/Algorithmic-Redistricting/static/js/2.376846fb.chunk.js",
+    "static/js/2.376846fb.chunk.js.map": "/Algorithmic-Redistricting/static/js/2.376846fb.chunk.js.map",
+    "static/js/3.2e3cc22a.chunk.js": "/Algorithmic-Redistricting/static/js/3.2e3cc22a.chunk.js",
+    "static/js/3.2e3cc22a.chunk.js.map": "/Algorithmic-Redistricting/static/js/3.2e3cc22a.chunk.js.map",
+    "index.html": "/Algorithmic-Redistricting/index.html",
+    "static/css/main.5ed3ca6a.chunk.css.map": "/Algorithmic-Redistricting/static/css/main.5ed3ca6a.chunk.css.map",
+    "static/js/2.376846fb.chunk.js.LICENSE.txt": "/Algorithmic-Redistricting/static/js/2.376846fb.chunk.js.LICENSE.txt",
+    "static/media/AL_districts_0.98.adf7e875.png": "/Algorithmic-Redistricting/static/media/AL_districts_0.98.adf7e875.png",
+    "static/media/AL_districts_0.98_small.9d00e7aa.png": "/Algorithmic-Redistricting/static/media/AL_districts_0.98_small.9d00e7aa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84e46c61.js",
+    "static/js/2.376846fb.chunk.js",
+    "static/css/main.5ed3ca6a.chunk.css",
+    "static/js/main.464963c5.chunk.js"
+  ]
+}
