@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactImageMagnify from 'react-image-magnify';
 
-import './MagImage.css';
-
 
 class MagImage extends React.Component {
 	render() {
@@ -11,20 +9,20 @@ class MagImage extends React.Component {
 				<div className='fluid__image-container'>
 					<ReactImageMagnify {...{
 						smallImage: {
-							src: this.state.currentlySelected.default,
+							src: this.props.smallImg.default,
 							//isFluidWidth: true,
-							width: this.state.smallSize.width,
-							height: this.state.smallImage.height,
+							width: this.props.smallDim.width,
+							height: this.props.smallDim.height,
 						},
 						largeImage: {
-							src: this.state.currentlySelected.default,
-							width: this.state.bigSize.width,
-							height: this.state.bigSize.height,
+							src: this.props.bigImg.default,
+							width: this.props.bigDim.width,
+							height: this.props.bigDim.height,
 						},
-						enlargedImageContainerDimensions: {
+						/*enlargedImageContainerDimensions: {
 							width: '200%',
 							height: '100%',
-						},
+						},*/
 						isHintEnabled: true,
 					}} />
 				</div>
