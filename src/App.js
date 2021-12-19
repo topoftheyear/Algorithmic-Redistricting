@@ -50,6 +50,9 @@ class App extends React.Component {
 					<MagImage smallImg={this.state.currentlySelectedSmall} bigImg={this.state.currentlySelectedBig}
 					smallDim={this.state.smallSize} bigDim={this.state.bigSize} />
 				</header>
+				<div>
+					Nice
+				</div>
 			</div>
 		}
 		else {
@@ -59,6 +62,9 @@ class App extends React.Component {
 					<TrashImage selection={this.state.currentlySelectedSmall} updateDim={this.smallDimUpdate} />
 					<TrashImage selection={this.state.currentlySelectedBig} updateDim={this.bigDimUpdate} />
 				</header>
+				<div>
+					Nice
+				</div>
 			</div>
 		}
 		
