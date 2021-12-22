@@ -20,6 +20,7 @@ print('Sorting zip shape map')
 sortedf = sorted(sf.shapeRecords(), key=lambda _: _.record[0])
 
 percentage_of_max = 1.0
+image_scale = 5
 
 
 def distance(p1, p2):
@@ -29,7 +30,7 @@ def distance(p1, p2):
 big_data = dict()
 
 for state in delegates.keys():
-    '''if state != 'MD':
+    '''if state != 'AK':
         continue'''
 
     print(f'State: {state}, Percent: {percentage_of_max}')
@@ -69,9 +70,8 @@ for state in delegates.keys():
             if row['longitude'] < furthest_left:
                 furthest_left = row['longitude']
 
-    scale = 3
-    x_dist = abs(furthest_right - furthest_left) * scale
-    y_dist = abs(furthest_up - furthest_down) * scale
+    x_dist = abs(furthest_right - furthest_left) * image_scale
+    y_dist = abs(furthest_up - furthest_down) * image_scale
     
     weights = list()
     for pop in populations:
@@ -266,7 +266,7 @@ for state in delegates.keys():
     for ax in fig.get_axes():
         ax.set_aspect('equal')
     
-    plt.savefig(f'src/results/images/{state}_districts_{percentage_of_max}.png')
+    plt.savefig(f'src/results/images/{state}_districts_{percentage_of_max}.png', bbox_inches='tight')
     plt.close(fig)
 
     # Data saving for a file
@@ -303,5 +303,5 @@ for state in delegates.keys():
     }
 
     
-with open(f'src/results/results_{percentage_of_max}.json', 'w+') as f:
-    json.dump(big_data, f)
+#with open(f'src/results/results_{percentage_of_max}.json', 'w+') as f:
+#    json.dump(big_data, f)

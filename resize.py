@@ -17,10 +17,10 @@ for filename in tqdm(os.listdir(location)):
 
 	width, height = im.size
 
-	max_width = 1000
-	max_height = 1000
+	max_width = 1280
+	max_height = 720
 
-	while width > max_width or max_height > max_height:
+	while width > max_width or height > max_height:
 		width /= 2
 		height /= 2
 
