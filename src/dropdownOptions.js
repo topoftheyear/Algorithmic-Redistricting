@@ -45,7 +45,7 @@ const stateOptions = [
 	{ label: 'Ohio', value: 'OH' },
 	{ label: 'Oklahoma', value: 'OK' },
 	{ label: 'Oregon', value: 'OR' },
-	{ label: 'Pennsylvania', value: 'PN' },
+	{ label: 'Pennsylvania', value: 'PA' },
 	{ label: 'Rhode Island', value: 'RI' },
 	{ label: 'South Carolina', value: 'SC' },
 	{ label: 'South Dakota', value: 'SD' },
