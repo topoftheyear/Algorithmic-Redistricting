@@ -13,7 +13,7 @@
   color: white;
 }
 
-.Body {
+.StateBrowse {
   align-items: center;
   justify-content: center;
 }
@@ -27,6 +27,15 @@
   padding: 10px;
   flex: auto;
   flex-basis: 25%;
+}
+
+.ZipLookup {
+  background-color: #28342d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .About {
