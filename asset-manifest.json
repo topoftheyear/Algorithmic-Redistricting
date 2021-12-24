@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Algorithmic-Redistricting/static/css/main.215de170.chunk.css",
-    "main.js": "/Algorithmic-Redistricting/static/js/main.847b40e3.chunk.js",
-    "main.js.map": "/Algorithmic-Redistricting/static/js/main.847b40e3.chunk.js.map",
-    "runtime-main.js": "/Algorithmic-Redistricting/static/js/runtime-main.380b996e.js",
-    "runtime-main.js.map": "/Algorithmic-Redistricting/static/js/runtime-main.380b996e.js.map",
-    "static/js/2.5f4a721a.chunk.js": "/Algorithmic-Redistricting/static/js/2.5f4a721a.chunk.js",
-    "static/js/2.5f4a721a.chunk.js.map": "/Algorithmic-Redistricting/static/js/2.5f4a721a.chunk.js.map",
-    "static/js/3.90d405b4.chunk.js": "/Algorithmic-Redistricting/static/js/3.90d405b4.chunk.js",
-    "static/js/3.90d405b4.chunk.js.map": "/Algorithmic-Redistricting/static/js/3.90d405b4.chunk.js.map",
+    "main.css": "/Algorithmic-Redistricting/static/css/main.b09a9dd7.chunk.css",
+    "main.js": "/Algorithmic-Redistricting/static/js/main.53aa8003.chunk.js",
+    "main.js.map": "/Algorithmic-Redistricting/static/js/main.53aa8003.chunk.js.map",
+    "runtime-main.js": "/Algorithmic-Redistricting/static/js/runtime-main.c2da31c2.js",
+    "runtime-main.js.map": "/Algorithmic-Redistricting/static/js/runtime-main.c2da31c2.js.map",
+    "static/js/2.f7b20b1c.chunk.js": "/Algorithmic-Redistricting/static/js/2.f7b20b1c.chunk.js",
+    "static/js/2.f7b20b1c.chunk.js.map": "/Algorithmic-Redistricting/static/js/2.f7b20b1c.chunk.js.map",
+    "static/js/3.12d61dcd.chunk.js": "/Algorithmic-Redistricting/static/js/3.12d61dcd.chunk.js",
+    "static/js/3.12d61dcd.chunk.js.map": "/Algorithmic-Redistricting/static/js/3.12d61dcd.chunk.js.map",
     "index.html": "/Algorithmic-Redistricting/index.html",
-    "static/css/main.215de170.chunk.css.map": "/Algorithmic-Redistricting/static/css/main.215de170.chunk.css.map",
-    "static/js/2.5f4a721a.chunk.js.LICENSE.txt": "/Algorithmic-Redistricting/static/js/2.5f4a721a.chunk.js.LICENSE.txt",
+    "static/css/main.b09a9dd7.chunk.css.map": "/Algorithmic-Redistricting/static/css/main.b09a9dd7.chunk.css.map",
+    "static/js/2.f7b20b1c.chunk.js.LICENSE.txt": "/Algorithmic-Redistricting/static/js/2.f7b20b1c.chunk.js.LICENSE.txt",
     "static/media/AK_districts_0.95.png": "/Algorithmic-Redistricting/static/media/AK_districts_0.95.273607a2.png",
     "static/media/AK_districts_0.95_small.png": "/Algorithmic-Redistricting/static/media/AK_districts_0.95_small.ef5cf22b.png",
     "static/media/AK_districts_0.96.png": "/Algorithmic-Redistricting/static/media/AK_districts_0.96.46311726.png",
@@ -614,9 +614,9 @@
     "static/media/WY_districts_1.0_small.png": "/Algorithmic-Redistricting/static/media/WY_districts_1.0_small.dba8c13b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.380b996e.js",
-    "static/js/2.5f4a721a.chunk.js",
-    "static/css/main.215de170.chunk.css",
-    "static/js/main.847b40e3.chunk.js"
+    "static/js/runtime-main.c2da31c2.js",
+    "static/js/2.f7b20b1c.chunk.js",
+    "static/css/main.b09a9dd7.chunk.css",
+    "static/js/main.53aa8003.chunk.js"
   ]
 }
