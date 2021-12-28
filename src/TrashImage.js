@@ -12,7 +12,7 @@ class TrashImage extends React.Component {
 	render() {
 		return(
 			<div>
-				<img onLoad={this.onImgLoad} src={this.props.selection.default} alt="trash"/>
+				<img onLoad={this.onImgLoad} src={this.props.selection.default} alt="tempImg"/>
 			</div>
 		);
 	}

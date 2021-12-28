@@ -1,0 +1,20 @@
+.Questions {
+	background-color: #28342d;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.BadDescriptor {
+	max-width: 50%;
+	font-size: calc(5px + 1vmin);
+}
+
+a {
+	color: yellow;
+}

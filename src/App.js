@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import Select from 'react-select';
 
+import About from './About';
+import Questions from './Questions';
 import TrashImage from './TrashImage';
 import MagImage from './MagImage';
 import {percentList, stateList} from './dropdownOptions';
@@ -20,6 +22,10 @@ class App extends React.Component {
 			resData: require('./results/results_0.95.json'),
 			displayZips: [],
 		}
+	}
+
+	componentDidMount() {
+		document.title = "Algorithmic Redistricting"
 	}
 
 	smallDimUpdate = dim => {
@@ -60,15 +66,17 @@ class App extends React.Component {
 	zipUpdate = n => {
 		const text = n.target.value;
 		var allRes = [];
-		for (var districtNumber in this.state.resData[this.state.state].districts) {
-			console.log(this.state.resData[this.state.state].districts[districtNumber]['zip codes']);
-			for (var thing in this.state.resData[this.state.state].districts[districtNumber]['zip codes']) {
-				var code = String(this.state.resData[this.state.state].districts[districtNumber]['zip codes'][thing]);
-				if (code.indexOf(text) > -1) {
-					allRes.push({
-						zip: code,
-						district: districtNumber,
-					});
+		if (text !== ''){
+			for (var districtNumber in this.state.resData[this.state.state].districts) {
+				console.log(this.state.resData[this.state.state].districts[districtNumber]['zip codes']);
+				for (var thing in this.state.resData[this.state.state].districts[districtNumber]['zip codes']) {
+					var code = String(this.state.resData[this.state.state].districts[districtNumber]['zip codes'][thing]);
+					if (code.indexOf(text) > -1) {
+						allRes.push({
+							zip: code,
+							district: districtNumber,
+						});
+					}
 				}
 			}
 		}
@@ -110,7 +118,7 @@ class App extends React.Component {
 		return(
 			<div className='App'>
 				<header className='App-header'>
-					Algorithmic Redistricting
+					<h4>Algorithmic Redistricting</h4>
 				</header>
 				<div className='StateBrowse'>
 					<div className='Selectors'>
@@ -122,19 +130,24 @@ class App extends React.Component {
 					</div>
 				</div>
 				<div className='ZipLookup'>
-					Zip Code Lookup
-					<p></p>
-					<input
-						type="text"
-						onChange={this.zipUpdate}
-					/>
-					<div className='zipRes'>
-						{zips}
+					<h4>Zip Code Lookup</h4>
+					<div>
+						<input
+							type="text"
+							onChange={this.zipUpdate}
+							placeholder='Enter Zip Code'
+						/>
+						<div className='ZipRes'>
+							{zips}
+						</div>
 					</div>
 				</div>
-				<div className='About'>
-					What
-				</div>
+				<About />
+				<Questions />
+				<footer className='App-footer'>
+					Data used belongs to the U.S. Census with thanks. The Census is not affiliated with nor endorses this project. <br />
+					Riley Conlin 2021.
+				</footer>
 			</div>
 		);
 	}
