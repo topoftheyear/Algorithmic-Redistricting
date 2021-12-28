@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
 	<React.StrictMode>
+		<meta property='og:url' content='https://topoftheyear.github.io/Algorithmic-Redistricting/' />
+		<meta property='og:title' content='Algorithmic Redistricting' />
+		<meta property='og:description' content='Each U.S. state redistricted by algorithm. Images included.' />
+		<meta property='og:image' content='./results/images/AL_districts_0.98.png' />
 		<App />
 	</React.StrictMode>,
 	document.getElementById('root')
