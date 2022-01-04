@@ -65,7 +65,6 @@ class App extends React.Component {
 		var allRes = [];
 		if (text !== ''){
 			for (var districtNumber in this.state.resData[this.state.state].districts) {
-				console.log(this.state.resData[this.state.state].districts[districtNumber]['zip codes']);
 				for (var thing in this.state.resData[this.state.state].districts[districtNumber]['zip codes']) {
 					var code = String(this.state.resData[this.state.state].districts[districtNumber]['zip codes'][thing]);
 					if (code.indexOf(text) > -1) {
@@ -77,7 +76,6 @@ class App extends React.Component {
 				}
 			}
 		}
-		console.log(allRes);
 		this.setState({
 			displayZips: allRes,
 		})
@@ -114,7 +112,6 @@ class App extends React.Component {
 
 		let districtData = [];
 		for (var districtNumber in this.state.resData[this.state.state].districts) {
-			console.log(this.state.resData[this.state.state].districts[districtNumber]);
 			districtData.push(
 				<div>
 					District {districtNumber} | Population: {this.state.resData[this.state.state].districts[districtNumber].population}
