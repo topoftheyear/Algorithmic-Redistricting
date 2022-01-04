@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Select from 'react-select';
+import MetaTags from 'react-meta-tags';
 
 import About from './About';
 import Questions from './Questions';
@@ -22,10 +23,6 @@ class App extends React.Component {
 			resData: require('./results/results_0.95.json'),
 			displayZips: [],
 		}
-	}
-
-	componentDidMount() {
-		document.title = "Algorithmic Redistricting"
 	}
 
 	smallDimUpdate = dim => {
@@ -117,6 +114,13 @@ class App extends React.Component {
 		
 		return(
 			<div className='App'>
+				<MetaTags>
+					<title>Algorithmic Redistricting</title>
+					<meta property='og:url' content='https://topoftheyear.github.io/Algorithmic-Redistricting/' />
+					<meta property='og:title' content='Algorithmic Redistricting' />
+					<meta property='og:description' content='Each U.S. state redistricted by algorithm. Images included.' />
+					<meta property='og:image' content='./results/images/AL_districts_0.98.png' />
+				</MetaTags>
 				<header className='App-header'>
 					<h4>Algorithmic Redistricting</h4>
 				</header>
@@ -146,7 +150,7 @@ class App extends React.Component {
 				<Questions />
 				<footer className='App-footer'>
 					Data used belongs to the U.S. Census with thanks. The Census is not affiliated with nor endorses this project. <br />
-					Riley Conlin 2021.
+					Riley Conlin 2021-2022.
 				</footer>
 			</div>
 		);
