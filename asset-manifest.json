@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Algorithmic-Redistricting/static/css/main.20a64fe3.chunk.css",
-    "main.js": "/Algorithmic-Redistricting/static/js/main.28ad9ae6.chunk.js",
-    "main.js.map": "/Algorithmic-Redistricting/static/js/main.28ad9ae6.chunk.js.map",
-    "runtime-main.js": "/Algorithmic-Redistricting/static/js/runtime-main.ce2acce0.js",
-    "runtime-main.js.map": "/Algorithmic-Redistricting/static/js/runtime-main.ce2acce0.js.map",
-    "static/js/2.a24ade43.chunk.js": "/Algorithmic-Redistricting/static/js/2.a24ade43.chunk.js",
-    "static/js/2.a24ade43.chunk.js.map": "/Algorithmic-Redistricting/static/js/2.a24ade43.chunk.js.map",
-    "static/js/3.3bfd8239.chunk.js": "/Algorithmic-Redistricting/static/js/3.3bfd8239.chunk.js",
-    "static/js/3.3bfd8239.chunk.js.map": "/Algorithmic-Redistricting/static/js/3.3bfd8239.chunk.js.map",
+    "main.js": "/Algorithmic-Redistricting/static/js/main.7fed9bcf.chunk.js",
+    "main.js.map": "/Algorithmic-Redistricting/static/js/main.7fed9bcf.chunk.js.map",
+    "runtime-main.js": "/Algorithmic-Redistricting/static/js/runtime-main.e8cd21fb.js",
+    "runtime-main.js.map": "/Algorithmic-Redistricting/static/js/runtime-main.e8cd21fb.js.map",
+    "static/js/2.fbc2f206.chunk.js": "/Algorithmic-Redistricting/static/js/2.fbc2f206.chunk.js",
+    "static/js/2.fbc2f206.chunk.js.map": "/Algorithmic-Redistricting/static/js/2.fbc2f206.chunk.js.map",
+    "static/js/3.172eb88e.chunk.js": "/Algorithmic-Redistricting/static/js/3.172eb88e.chunk.js",
+    "static/js/3.172eb88e.chunk.js.map": "/Algorithmic-Redistricting/static/js/3.172eb88e.chunk.js.map",
     "index.html": "/Algorithmic-Redistricting/index.html",
     "static/css/main.20a64fe3.chunk.css.map": "/Algorithmic-Redistricting/static/css/main.20a64fe3.chunk.css.map",
-    "static/js/2.a24ade43.chunk.js.LICENSE.txt": "/Algorithmic-Redistricting/static/js/2.a24ade43.chunk.js.LICENSE.txt",
+    "static/js/2.fbc2f206.chunk.js.LICENSE.txt": "/Algorithmic-Redistricting/static/js/2.fbc2f206.chunk.js.LICENSE.txt",
     "static/media/AK_districts_0.95.png": "/Algorithmic-Redistricting/static/media/AK_districts_0.95.273607a2.png",
     "static/media/AK_districts_0.95_small.png": "/Algorithmic-Redistricting/static/media/AK_districts_0.95_small.ef5cf22b.png",
     "static/media/AK_districts_0.96.png": "/Algorithmic-Redistricting/static/media/AK_districts_0.96.46311726.png",
@@ -614,9 +614,9 @@
     "static/media/WY_districts_1.0_small.png": "/Algorithmic-Redistricting/static/media/WY_districts_1.0_small.dba8c13b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce2acce0.js",
-    "static/js/2.a24ade43.chunk.js",
+    "static/js/runtime-main.e8cd21fb.js",
+    "static/js/2.fbc2f206.chunk.js",
     "static/css/main.20a64fe3.chunk.css",
-    "static/js/main.28ad9ae6.chunk.js"
+    "static/js/main.7fed9bcf.chunk.js"
   ]
 }
