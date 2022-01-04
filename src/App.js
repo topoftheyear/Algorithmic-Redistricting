@@ -142,16 +142,16 @@ class App extends React.Component {
 				<MetaTags>
 					<title>Algorithmic Redistricting</title>
 					<meta name='description' content='Each U.S. state redistricted by algorithm using Census data and zip codes.' />
-					<meta name='keywords' content='Redistrict, Algorithm, Gerrymandering' />
 					<meta name='author' content='Riley Conlin' />
 					<meta property='og:url' content='https://topoftheyear.github.io/Algorithmic-Redistricting/' />
 					<meta property='og:title' content='Algorithmic Redistricting' />
+					<meta property='og:type' content='website' />
 					<meta property='og:description' content='Each U.S. state redistricted by algorithm using Census data and zip codes.' />
 					<meta property='og:image' content='./results/images/AL_districts_0.98.png' />
-					<meta property='twitter:card' content='summary' />
-					<meta property='twitter:title' content='Algorithmic Redistricting' />
-					<meta property='twitter:description' content='Each U.S. state redistricted by algorithm using Census data and zip codes.' />
-					<meta property='twitter:image' content='./results/images/AL_districts_0.98.png' />
+					<meta name='twitter:card' content='summary' />
+					<meta name='twitter:title' content='Algorithmic Redistricting' />
+					<meta name='twitter:description' content='Each U.S. state redistricted by algorithm using Census data and zip codes.' />
+					<meta name='twitter:image' content='./results/images/AL_districts_0.98.png' />
 				</MetaTags>
 				<header className='App-header'>
 					<h4>Algorithmic Redistricting</h4>
