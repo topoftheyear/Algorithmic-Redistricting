@@ -109,8 +109,33 @@ class App extends React.Component {
 				<div>
 					{this.state.displayZips[i].zip}: District {this.state.displayZips[i].district}
 				</div>
-			)
+			);
 		}
+
+		let districtData = [];
+		for (var districtNumber in this.state.resData[this.state.state].districts) {
+			console.log(this.state.resData[this.state.state].districts[districtNumber]);
+			districtData.push(
+				<div>
+					District {districtNumber} | Population: {this.state.resData[this.state.state].districts[districtNumber].population}
+				</div>
+			);
+		}
+		let largestDistrict = this.state.resData[this.state.state].stats['largest district'].district;
+		let smallestDistrict = this.state.resData[this.state.state].stats['smallest district'].district;
+		let extraData = (
+			<div>
+				<div>
+					Largest District: {largestDistrict} at {this.state.resData[this.state.state].districts[largestDistrict].population}
+				</div>
+				<div>
+					Smallest District: {smallestDistrict} at {this.state.resData[this.state.state].districts[smallestDistrict].population}
+				</div>
+				<div>
+					Population Difference: {this.state.resData[this.state.state].districts[largestDistrict].population - this.state.resData[this.state.state].districts[smallestDistrict].population}
+				</div>
+			</div>
+		);
 		
 		return(
 			<div className='App'>
@@ -131,6 +156,15 @@ class App extends React.Component {
 					</div>
 					<div className='Images'>
 						{res}
+					</div>
+					<div className='DistrictInfoDisplay'>
+						<p>
+							<h3>Districts</h3>
+							{districtData}
+						</p>
+						<p>
+							{extraData}
+						</p>
 					</div>
 				</div>
 				<div className='ZipLookup'>
