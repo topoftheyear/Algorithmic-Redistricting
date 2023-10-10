@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Algorithmic-Redistricting/static/css/main.20a64fe3.chunk.css",
-    "main.js": "/Algorithmic-Redistricting/static/js/main.fbfb7ad1.chunk.js",
-    "main.js.map": "/Algorithmic-Redistricting/static/js/main.fbfb7ad1.chunk.js.map",
+    "main.js": "/Algorithmic-Redistricting/static/js/main.b0b7b85c.chunk.js",
+    "main.js.map": "/Algorithmic-Redistricting/static/js/main.b0b7b85c.chunk.js.map",
     "runtime-main.js": "/Algorithmic-Redistricting/static/js/runtime-main.ce2acce0.js",
     "runtime-main.js.map": "/Algorithmic-Redistricting/static/js/runtime-main.ce2acce0.js.map",
     "static/js/2.a24ade43.chunk.js": "/Algorithmic-Redistricting/static/js/2.a24ade43.chunk.js",
@@ -617,6 +617,6 @@
     "static/js/runtime-main.ce2acce0.js",
     "static/js/2.a24ade43.chunk.js",
     "static/css/main.20a64fe3.chunk.css",
-    "static/js/main.fbfb7ad1.chunk.js"
+    "static/js/main.b0b7b85c.chunk.js"
   ]
 }
