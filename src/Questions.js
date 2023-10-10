@@ -10,7 +10,11 @@ class Questions extends React.Component {
 				<div className='BadDescriptor'>
 				<p>
 					<b>Why is a state misshapen?</b> <br />
-					Certain zip codes go beyond state boundaries because the Postal Service finds it easiest to group certain people together. A major example would be in eastern Oregon and western Idaho. Alternatively, land distortions happen when trying to accurately draw a sphere's surface on a flat surface. That or our own perceptions are wrong.
+					Map distortions happen when trying to accurately draw a sphere's surface on a flat surface. It is a famous cartographical issue.
+				</p>
+				<p>
+					<b>South Dakota looks really bad in particular though...</b>
+					Don't worry about it. It looks bad in real life too.
 				</p>
 				<p>
 					<b>Where is there an empty space in a state?</b> <br />

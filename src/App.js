@@ -173,7 +173,7 @@ class App extends React.Component {
 				<Questions />
 				<footer className='App-footer'>
 					Data used belongs to the U.S. Census with thanks. The Census is not affiliated with nor endorses this project. <br />
-					Riley Conlin 2021-2022.
+					Riley Conlin 2021-2023.
 				</footer>
 			</div>
 		);

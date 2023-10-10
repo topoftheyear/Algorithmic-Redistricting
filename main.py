@@ -15,7 +15,7 @@ from tqdm import tqdm
 print('Reading census zip data')
 zip_data = pd.read_csv('zip_census_data.csv')
 print('Reading zip shape map')
-sf = shp.Reader('shapemap/tl_2010_us_zcta510.shp')
+sf = shp.Reader('shapemap/tl_2020_us_zcta520.shp')
 print('Sorting zip shape map')
 sortedf = sorted(sf.shapeRecords(), key=lambda _: _.record[0])
 
@@ -30,7 +30,7 @@ def distance(p1, p2):
 big_data = dict()
 
 for state in delegates.keys():
-    '''if state != 'AK':
+    '''if state not in ['IA', 'KS', 'MT']:
         continue'''
 
     print(f'State: {state}, Percent: {percentage_of_max}')
@@ -44,6 +44,7 @@ for state in delegates.keys():
     state_population = 0
     points = list()
     populations = list()
+    cities = dict()
     
     furthest_left = 1000000
     furthest_right = -1000000
@@ -51,9 +52,23 @@ for state in delegates.keys():
     furthest_down = 1000000
     
     for index, row in zip_data.iterrows():
-        if row['state'] == state:
+        if row['state_id'] == state:
             state_population += row['population']
-            point = [row['latitude'], row['longitude']]
+            point = [row['lat'], row['lng']]
+            
+            city = row['city']
+            if city not in cities:
+                cities[city] = {
+                    'name': city,
+                    'population': int(row['population']),
+                    'density': float(row['density']),
+                    'position': [row['lat'], row['lng']]
+                }
+            else:
+                cities[city]['population'] += int(row['population'])
+                if float(row['density']) > cities[city]['density']:
+                    cities[city]['density'] = float(row['density'])
+                    cities[city]['position'] = [row['lat'], row['lng']]
 
             points.append({
                 'zip': row['zip'],
@@ -61,14 +76,14 @@ for state in delegates.keys():
                 'population': row['population']
             })
             
-            if row['latitude'] > furthest_up:
-                furthest_up = row['latitude']
-            if row['latitude'] < furthest_down:
-                furthest_down = row['latitude']
-            if row['longitude'] > furthest_right:
-                furthest_right = row['longitude']
-            if row['longitude'] < furthest_left:
-                furthest_left = row['longitude']
+            if row['lat'] > furthest_up:
+                furthest_up = row['lat']
+            if row['lat'] < furthest_down:
+                furthest_down = row['lat']
+            if row['lng'] > furthest_right:
+                furthest_right = row['lng']
+            if row['lng'] < furthest_left:
+                furthest_left = row['lng']
 
     x_dist = abs(furthest_right - furthest_left) * image_scale
     y_dist = abs(furthest_up - furthest_down) * image_scale
@@ -218,6 +233,7 @@ for state in delegates.keys():
     
     fig = plt.figure(figsize=(x_dist, y_dist), dpi=100)
 
+    # Plot zip codes
     for cid, centroid in centroids.items():
         big_data[state]['districts'][cid + 1]['population'] = centroid['population']
         for point in centroid['points']:
@@ -254,12 +270,37 @@ for state in delegates.keys():
 
             big_data[state]['districts'][cid + 1]['zip codes'].append(point['zip'])
 
+        # Plot district number
         txt = plt.text(
             centroid['position'][1],
             centroid['position'][0],
             centroid['name'],
             color='w',
+            fontsize='xx-large',
+        )
+        txt.set_path_effects([PathEffects.withStroke(linewidth=2, foreground='black')])
+    
+    # Plot cities
+    max_cities = dict(sorted(cities.items(), key=lambda item: item[1]['population'], reverse=True))
+    for key in {k: max_cities[k] for k in list(max_cities)[:3]}:
+        city = max_cities[key]
+
+        plt.plot(
+            city['position'][1],
+            city['position'][0],
+            color=(0, 0, 0),
+            marker='o',
+            markersize=10,
+        )
+
+        txt = plt.text(
+            city['position'][1],
+            city['position'][0],
+            city['name'],
+            color='w',
             fontsize='large',
+            va='bottom',
+            ha='center',
         )
         txt.set_path_effects([PathEffects.withStroke(linewidth=2, foreground='black')])
 
@@ -303,5 +344,5 @@ for state in delegates.keys():
     }
 
     
-#with open(f'src/results/results_{percentage_of_max}.json', 'w+') as f:
-#    json.dump(big_data, f)
+with open(f'src/results/results_{percentage_of_max}.json', 'w+') as f:
+    json.dump(big_data, f)
