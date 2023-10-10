@@ -9,16 +9,16 @@ class Questions extends React.Component {
 				<h4>Questions and Additional Information</h4>
 				<div className='BadDescriptor'>
 				<p>
+					<b>Where is there an empty space in a state?</b> <br />
+					One of two reasons. First and most likely, a lot of federal land doesn't have an associated zip code, thus the area is left blank. A prominent example of this is Nevada. The second reason would be conflict in the data I used. One file contains all pertinent information, the other is a shapefile. If a zip code is in one file but not the other, empty space is created.
+				</p>
+				<p>
 					<b>Why is a state misshapen?</b> <br />
 					Map distortions happen when trying to accurately draw a sphere's surface on a flat surface. It is a famous cartographical issue.
 				</p>
 				<p>
-					<b>South Dakota looks really bad in particular though...</b>
+					<b>South Dakota looks really bad in particular though...</b> <br />
 					Don't worry about it. It looks bad in real life too.
-				</p>
-				<p>
-					<b>Where is there an empty space in a state?</b> <br />
-					One of two reasons. First and most likely, a lot of federal land doesn't have an associated zip code, thus the area is left blank. A prominent example of this is Nevada. The second reason would be conflict in the data I used. One file contains all pertinent information, the other is a shapefile. If a zip code is in one file but not the other, empty space is created.
 				</p>
 				<p>
 					<b>The colors of neighboring districts are too similar.</b> <br />
